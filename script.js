@@ -3,7 +3,7 @@ const splash = document.querySelector('.splash');
 document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(()=>{
         splash.classList.add('display-none');
-    }, 2500);
+    }, 2750);
 })
 
 
@@ -70,7 +70,7 @@ function animate(timeStamp){
     const deltaTime = timeStamp - lastTime;
     lastTime = timeStamp;
     if(timer > nextFrame) {
-    ctx.fillStyle = 'rgba(0,0,0,0.05)';
+    ctx.fillStyle = 'rgba(254,212,252,0.05)';
     ctx.textAlign = 'center';
     ctx.fillRect(0,0,canvas.width, canvas.height);
     ctx.fillStyle = '#e256db'
